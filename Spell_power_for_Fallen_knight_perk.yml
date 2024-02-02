@@ -1,0 +1,21 @@
+# ----------------------------------------------------
+# ----------------- Spell power for Fallen knight perk --------------
+# ----------------------------------------------------
+# Сhanges the amount of magic power for the Fallen knight perk from 5 to 6.
+# 
+# -------------- Things you may want to modify -----------------
+definitions:
+- &reqiem_sp  6
+#
+# -------------- Things you must not modify -----------------
+- &toe_sp  5
+#
+--- # ----------- ORIGINAL EXE 3.1 PATCH DATA ------------
+group: Original
+patchAddress:   007BF8C8
+valueType:      Integer
+originalValue:  *toe_sp
+patchValue:     *reqiem_sp
+
+
+
