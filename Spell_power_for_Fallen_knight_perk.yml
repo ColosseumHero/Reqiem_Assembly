@@ -1,0 +1,24 @@
+# ----------------------------------------------------
+# ----------------- Spell power for Fallen knight perk --------------
+# ----------------------------------------------------
+# Сhanges the amount of spell power characteristic, giving a knight for
+# the dark magic, for the Fallen knight perk.
+# 
+# ------------ Values you may want to modify --------------
+definitions:
+- &reqiem_sp  6
+#
+# -------------- Values from the original -----------------
+- &toe_sp  5
+#
+--- # ----------- ORIGINAL EXE 3.1 PATCH DATA -------------
+checkAddress:   007BF8B0
+checkBytes:     31 04 8D 4C 31 04 6A 53 FF 92 90 02 00 00 84 C0 74 16 6A 00 6A 00 83 C3
+group: Original
+patchAddress:   007BF8C8
+valueType:      Integer
+originalValue:  *toe_sp
+patchValue:     *reqiem_sp
+
+
+
