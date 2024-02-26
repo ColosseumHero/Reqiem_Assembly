@@ -1,0 +1,15 @@
+# ---------------------------------------------------------------------------
+# ----------------- Hero hiring cost ----------------------------------------
+# ---------------------------------------------------------------------------
+# Changes the hero hiring formula from 1500 + 500 for each available
+# hero to 1500 + 250 for each available hero
+# 
+--- # ----------- ORIGINAL EXE 3.1 PATCH DATA --------------------------------
+
+group: Original
+patchAddress:   0074C2E4
+originalValue:  C1 04 8B F1 C1 E6 06 2B F1 03 F6 2B F1 8B 4C 24 08 03 F6 03 F6
+patchValue:     E9 01 BE FA 00 00 00 0F AF F1 81 C6 D0 07 00 00 90 8B 4C 24 08
+
+
+
