@@ -1,0 +1,25 @@
+# -----------------------------------------------------------------------
+# ----------------- Add spell_effect and spell_mass_sorrow --------------
+# -----------------------------------------------------------------------
+#
+# Adds new mass combat spell in area 4x4
+#
+--- # ----------- ORIGINAL EXE 3.1 PATCH DATA -------------
+checkAddress:   0018CD10
+checkBytes:     C3 E8 2A B9 2E 00 83 C4 04
+group: Original
+patchAddress:   0044BDC0
+originalValue:  61
+patchValue:     85
+
+group: Original     #fork from code
+patchAddress:   00633220    #00a33e20
+originalValue:  8D 81 2E FF FF FF
+patchValue:     E9 DB 5E 70 00 90
+
+group: Original     #new logic - add spell of value 354 (62 01) in types.xml, based on value SPELL_SORROW 277 (15 01)
+patchAddress:   00BDCD00    #01139d00
+originalValue:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+patchValue:     81 F9 62 01 00 00 75 06 B8 15 01 00 00 C3 8D 81 2E FF FF FF 68 26 3E A3 00 C3
+
+#IMPORTANT! Need spell_effect in types.xml (exemple value 353)
